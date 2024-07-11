@@ -4,7 +4,7 @@ This project is a simple portfolio website showcasing my skills and projects usi
 
 ## Demo
 
-You can view a live demo of the portfolio website [here]((https://eeegrr.github.io/EG-Portfolio/)).
+You can view a live demo of the portfolio website [here](https://eeegrr.github.io/EG-Portfolio/).
 
 ## Features
 
