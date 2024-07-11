@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evelīna Graumane - portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f2956b6ab.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-------loader---------->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-------header---------->
+    <div id="header">
+        <nav>
+            <a href="#main"><img src="images/logo.png" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#main">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!--<li><a href="#services">Services</a></li>-->
+                <li><a href="#portfolio">My work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+    </div>
+
+    <!-------greetings---------->
+    <div id="main">
+        <div class="container">
+            <div class="main-content">
+                <div class="main-text">
+                    <h1>
+                        <span class="text-bounce">Hey!</span> It's me,<br>
+                        <span class="name">Evelīna Graumane</span>
+                    </h1>
+                    <div class="text">
+                        I'm a Developer
+                    </div>
+                    <div class="main-social-icons">
+                        <a href="https://www.linkedin.com/in/evelīna-graumane-b60aa5246"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/eee.ggr/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/eeegrr"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                </div>
+                <div id="3d-background"></div>
+            </div>
+        </div>
+    </div>
+    <!-------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-me-pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        <span class="tab"></span>I am a <span>Computer Science</span> and <span>Game Design</span>
+                        student with a passion for technology and creativity. My academic background equips me with a
+                        solid foundation in both <span>programming</span> and <span>game development</span>, allowing me
+                        to blend technical skills with innovative design.
+                        <br><span class="tab"></span>In my free time, I enjoy playing <span>computer games</span>, which
+                        inspires my work and fuels my creativity. I also love <span>bouldering</span>, taking
+                        <span>walks</span> in nature and any expression of <span>art</span>, activities that keep me
+                        active and provide a balance to my tech-focused pursuits.
+                        <br><span class="tab"></span>I'm always eager to learn and take on <span>new challenges</span>,
+                        whether it's exploring the latest in game design or automating complex processes.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('courses')">Courses</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Automation</span><br>Automation Anywhere / SQL / Power BI</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Game Development</span><br>Game Development with Unity</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>MSC Meditterranean Shipping Company / May 2023 - May 2024</span><br>RPA Developer
+                                - internship</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>On-going, Computer Information Systems / 2022 - 2025</span><br>Riga Technical
+                                University</li>
+                            <li><span>On-going, Game Design / 2023 - 2027</span><br>South-Eastern Finland University of
+                                Applied Sciences</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="courses">
+                        <ul>
+                            <li><span>University of Colorado / 2022</span><br>C# Programming for Unity Game Development
+                                Specialization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------services---------->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Automation</h2>
+                    <p>gugugugugugjuwngiubshiusvbgnsiuwgvg e uheouwggougevnosubvnsdcv
+                        gugugugugugjuwngiubshiusvbgnsiuwgvg e uheouwggougevnosubvnsdcv
+                        gugugugugugjuwngiubshiusvbgnsiuwgvg e uheouwggougevnosubvnsdcv</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>gugugugugugjuwngiubshiusvbgnsiuwgvg e uheouwggougevnosubvnsdcv
+                        gugugugugugjuwngiubshiusvbgnsiuwgvg e uheouwggougevnosubvnsdcvgugugugu
+                        gugjuwngiubshiusvbgnsiuwgvg e uheouwggougevnosubvnsdcv</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Game development</h2>
+                    <p>gugugugugugjuwngiubshiusvbgnsiuwgvg e uheouwggougevnosubvnsdcv
+                        gugugugugugjuwngiubshiusvbgnsiuwgvg e uheouwggougevnosubvnsdcvgugugugu
+                        gugjuwngiubshiusvbgnsiuwgvg e uheouwggougevnosubvnsdcv</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-------my work---------->
+    <div id="portfolio">
+        <div class="container">
+            <div class="work-container">
+                <div class="work-info">
+                    <h2 class="work-number" id="work-number">01</h2>
+                    <h3 class="work-category" id="work-category">Frontend Project</h3>
+                    <p class="work-description" id="work-description">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Cupiditate
+                        magnam modi.</p>
+                    <p class="work-stack" id="work-stack">Html 5, Css 3, Javascript</p>
+                    <div class="work-links">
+                        <!--<a href="#" class="work-link" id="live-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>-->
+                        <a href="#" class="work-link" id="repo-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work-image">
+                    <img src="images/work-1.png" alt="Project 1" id="work-image">
+                </div>
+                <div class="work-navigation">
+                    <a href="#" class="nav-arrow" id="prev-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <a href="#" class="nav-arrow" id="next-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> evelinag8@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (+371) 25651940</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/evelīna-graumane-b60aa5246"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/eee.ggr/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/eeegrr"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Evelīna Graumane</p>
+        </div>
+    </div>
+
+    <script type="module" src="animation.js"></script>
+    <script type="module" src="work.js"></script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwNUglb03wxSyvWH2kP-LRiCLA0ZM0bp4Qyh1nUDEXFS9Ad_lkk6blgqM6pJbf2CeaNGg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent succesfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
